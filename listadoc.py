@@ -34,7 +34,7 @@ def main():
         for doc in df_garantia["Documentación"]:
             st.write(f"- {doc}")
 
-    st.markdown("## ⭐ Otros Documentos para la Evaluación (Complementarios)")
+    st.markdown("## ⭐ Otros Documentos para la Evaluación (Complementarios según la operación)")
     if len(df_otros) > 0:
         for doc in df_otros["Documentación"]:
             st.write(f"- {doc}")
