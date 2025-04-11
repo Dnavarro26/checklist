@@ -53,7 +53,7 @@ def main():
     st.markdown("    -Si el cliente hiciera una remodelación con el préstamo, nos serviría el presupuesto de obra del proyecto de remodelación.")
     st.markdown("**Si el cliente paga un préstamo con garantía inmobiliaria a un acreedor que no es un Banco, Caja o cooperativa:**")
     st.markdown("• (Obligatorio) Cronograma de pagos del préstamo.")
-    st.markdown("• (Obligatorio) Últimos 6 pantallazos del pago de la cuota mas los Estados de cuenta de la cuenta de donde sale el dinero")
+    st.markdown("• (Obligatorio) Últimos 6 pantallazos del pago de la cuota más los Estados de cuenta de la cuenta de donde se realizan los pagos")
     st.markdown("• (Obligatorio) Liquidación para cancelar el préstamo a 25 días desde la fecha actual.")
     st.markdown("• (Opcional) Minuta o testimonio del préstamo con garantía hipotecaria.")
     st.markdown("• Nota: no puede haber atrasos en este tipo de préstamos, lo máximo tolerable es hasta 8 días.")
