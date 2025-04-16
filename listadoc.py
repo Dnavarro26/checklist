@@ -5,7 +5,7 @@ import os
 def main():
     st.title("Formulario de Documentación")
     st.markdown("**📋 Nota importante**")
-    st.write("Los documentos opcionales no son obligatorios pero son altamente sugeridos para aumentar las probabilidades de aprobación y tener un flujo rápido de la operación.")
+    st.write("Los documentos detallados en este checklist son necesarios para aumentar las probabilidades de aprobación y tener un flujo rápido de la operación.")
 
     # Definir el nombre y la ruta del archivo Excel
     archivo_excel = "checklist4.xlsx"  # Ruta completa del archivo
@@ -39,7 +39,6 @@ def main():
     if len(df_garantia) > 0:
         for doc in df_garantia["Documentación"]:
             st.write(f"- {doc}")
-    st.write("Si crees que la garantía puede ser débil, de baja comercialidad o está en las periferias, te recomendamos que envíes una foto y la ubicación de la garantía.")
 
     st.markdown("## ⭐ Otros Documentos para la Evaluación (Complementarios según la operación)")
     st.markdown("**Documentos obligatorios según sea el caso:**")
@@ -47,15 +46,15 @@ def main():
         for doc in df_otros["Documentación"]:
             st.write(f"- {doc}")
     st.markdown("**Documentos que pueden ayudar a esclarecer una observación de riesgos**")
-    st.markdown("• (Opcional) Cartas de no Adeudo: para acreditar si alguna deuda reportada actualmente ya ha sido cancelada")
-    st.markdown("• (Opcional) Documentos que fortalezcan el destino como por ejemplo:")
+    st.markdown("• Cartas de no Adeudo: Es obligatorio para acreditar si alguna deuda reportada actualmente ya ha sido cancelada")
+    st.markdown("• Documentos que fortalezcan el destino como por ejemplo:")
     st.markdown("    -Si el cliente va a comprar una maquinaria o activo fijo con el préstamo, nos serviría la proforma de qué va a comprar.")
     st.markdown("    -Si el cliente hiciera una remodelación con el préstamo, nos serviría el presupuesto de obra del proyecto de remodelación.")
     st.markdown("**Si el cliente paga un préstamo con garantía inmobiliaria a un acreedor que no es un Banco, Caja o cooperativa:**")
     st.markdown("• (Obligatorio) Cronograma de pagos del préstamo.")
     st.markdown("• (Obligatorio) Últimos 6 pantallazos del pago de la cuota más los Estados de cuenta de la cuenta de donde se realizan los pagos")
     st.markdown("• (Obligatorio) Liquidación para cancelar el préstamo a 25 días desde la fecha actual.")
-    st.markdown("• (Opcional) Minuta o testimonio del préstamo con garantía hipotecaria.")
+    st.markdown("• (Obligatorio) Minuta o testimonio del préstamo con garantía hipotecaria.")
     st.markdown("• Nota: no puede haber atrasos en este tipo de préstamos, lo máximo tolerable es hasta 8 días.")
 
     # Opciones de tipo de ingreso
